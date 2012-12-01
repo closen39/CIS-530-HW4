@@ -1,13 +1,13 @@
 # Jason Mow (jmow@seas.upenn.edu)
 # Nate Close (closen@seas.upenn.edu)
 
+from BeautifulSoup import BeautifulSoup as Soup
+from math import sqrt
 from nltk.corpus import PlaintextCorpusReader
 from nltk.tokenize import word_tokenize
 from nltk.probability import FreqDist
 from nltk.corpus import wordnet as wn
-from BeautifulSoup import BeautifulSoup as Soup
-from math import sqrt
-
+from stanford_parser.parser import Parser
 
 def get_all_files(directory):
     files = PlaintextCorpusReader(directory, '.*')
@@ -125,6 +125,14 @@ def cosine_similarity(x, y):
     if (xSquare == 0 or ySquare == 0):
         return 0.0
     return prodCross / (sqrt(xSquare) * sqrt(ySquare))
+
+def dependency_parse_files(fileList):
+    p = Parser()
+    retList = list()
+    for file in fileList:
+        deps = p.parseToStanfordDependencies(file)
+        retList.extend([(r, gov.text, dep.text) for r, gov, dep in deps.dependencies])
+    return retList
 
 def main():
     tagmap = get_tag_mapping('en-ptb-modified.map')
