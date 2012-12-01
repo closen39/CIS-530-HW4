@@ -150,6 +150,14 @@ def get_linked_words(word, word_list, pos, dependency_list, lemma_dict):
             retList.append(lemma)
     return list(set(retList))
 
+def get_top_n_linked_words(word, word_list, pos, dependency_list, lemma_dict, context_dict, n):
+    linked_words = get_linked_words(word, word_list, pos, dependency_list, lemma_dict)
+    word_scores = dict()
+    for lemma in linked_words:
+        word_scores[lemma] = get_path_similarity(word, context_dict[word], lemma, context_dict[lemma], pos)
+    return sorted(word_scores.keys(), key=lambda x: word_scores[x], reverse=True)[:n]
+
+
 def main():
     tagmap = get_tag_mapping('en-ptb-modified.map')
     files = get_all_files('xmlDir')
