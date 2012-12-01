@@ -130,7 +130,7 @@ def dependency_parse_files(fileList):
     p = Parser()
     retList = list()
     for file in fileList:
-        deps = p.parseToStanfordDependencies(file)
+        deps = p.parseToStanfordDependencies(open(file).read())
         retList.extend([(r, gov.text, dep.text) for r, gov, dep in deps.dependencies])
     return retList
 
