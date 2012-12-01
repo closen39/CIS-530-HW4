@@ -81,6 +81,7 @@ def get_context(lemmas, tok_sents):
                     retDict[lemma].add(x)
     return retDict
 
+# Undefined behavior if synset from wn.synsets(word, pos) returns nothing
 def get_path_similarity(word1, context1, word2, context2, pos):
     wn_pos = wn.VERB
     if pos == 'noun':
