@@ -62,13 +62,31 @@ def get_top_nouns_verbs(tok_sents, tagmap, n):
                 fdNoun.inc(tup[1])
     return (fdNoun.keys()[:n], fdVerb.keys()[:n])
 
+def get_context(lemmas, tok_sents):
+    # get_func_words('/home1/c/cis530/hw4/funcwords.txt')
+    funcwords = get_func_words('funcwords.txt')
+    retDict = dict()
+    for lemma in lemmas:
+        retDict[lemma] = set()
+    for sent in tok_sents:
+        sentence_lemmas = [x[1] for x in sent]
+        for lemma in lemmas:
+            if lemma in sentence_lemmas and lemma not in funcwords:
+                # context consists of lemmas, not words
+                context = [x[1] for x in sent if x[1] != lemma]
+                for x in context:
+                    retDict[lemma].add(x)
+    return retDict
+
 def main():
     tagmap = get_tag_mapping('en-ptb-modified.map')
     files = get_all_files('xmlDir')
     toks = get_all_sent_tok(files)
     # nvDict = get_nounverb_lemma_dict(toks, tagmap)
-    topnv = get_top_nouns_verbs(toks, tagmap, 10)
-    print topnv
+    topnv = get_top_nouns_verbs(toks, tagmap, 2)
+    # print topnv
+    contexts = get_context(topnv[0], toks)
+    print contexts
 
 if  __name__ =='__main__':
     main()
