@@ -5,6 +5,10 @@ from nltk.corpus import PlaintextCorpusReader
 from nltk.tokenize import word_tokenize
 from BeautifulSoup import BeautifulSoup as Soup
 
+def get_all_files(directory):
+    files = PlaintextCorpusReader(directory, '.*')
+    return [directory + "/" + x for x in files.fileids()]
+
 def get_tag_mapping(map_file):
     tags = dict()
     f = open(map_file)
