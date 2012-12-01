@@ -134,6 +134,21 @@ def dependency_parse_files(fileList):
         retList.extend([(r.lower(), gov.text.lower(), dep.text.lower()) for r, gov, dep in deps.dependencies])
     return retList
 
+# pos is a pos, lolz
+# word_list is list of lemmas to be considered
+# word is a lemma
+def get_linked_words(word, word_list, pos, dependency_list, lemma_dict):
+    dep_list = [(r, lemma_dict[gov], lemma_dict[dep]) for r, gov, dep in dependency_list if lemma_dict[gov] != None and lemma_dict[dep] != None]
+    retList = list()
+    for lemma in word_list:
+        dep1 = [(r, gov, dep) for r, gov, dep in dep_list if gov == lemma and dep == word]
+        if len(dep1):
+            retList.append(lemma)
+        dep2 = [(r, gov, dep) for r, gov, dep in dep_list if dep == lemma and gov == word]
+        if len(dep2):
+            retList.append(lemma)
+    return list(set(retList))
+
 def main():
     tagmap = get_tag_mapping('en-ptb-modified.map')
     files = get_all_files('xmlDir')
