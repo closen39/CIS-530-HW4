@@ -14,7 +14,7 @@ def get_tag_mapping(map_file):
     f = open(map_file)
     for line in f:
         data = line.split("\t")
-        tags[data[0]] = data[1]
+        tags[data[0]] = data[1].rstrip()
     return tags
 
 # Assuming that xml_files is a list of filenames to xml files, not the actual xml
@@ -32,10 +32,20 @@ def get_all_sent_tok(xml_files):
             retList.append(sentList)
     return retList
 
+def get_nounverb_lemma_dict(tok_sents, tagmap):
+    retDict = dict()
+    for sent in tok_sents:
+        for tup in sent:
+            if tagmap[tup[2]] == "VERB" or tagmap[tup[2]] == "NOUN":
+                retDict[tup[0]] = tup[1]
+    return retDict
+
 def main():
+    tagmap = get_tag_mapping('en-ptb-modified.map')
     files = get_all_files('xmlDir')
     toks = get_all_sent_tok(files)
-    print toks
+    nvDict = get_nounverb_lemma_dict(toks, tagmap)
+    print nvDict
 
 if  __name__ =='__main__':
     main()
