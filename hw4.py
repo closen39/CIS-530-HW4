@@ -23,13 +23,19 @@ def get_all_sent_tok(xml_files):
     for file in xml_files:
         text = open(file).read()
         doc = Soup(text)
-        sents = [x.string for x in doc.findAll("sentence")]
+        sents = doc.findAll("tokens")
         for s in sents:
             sentList = list()
-            sentence = Soup(s)
-            toks = [x.string for x in sentence.findAll("token")
+            toks = [x for x in s.contents if x != "\n"]
             for tok in toks:
-                token = Soup(tok)
-                sentList.append((token.find("word").string.lower(), token.find("lemma").string.lower(), token.find("pos").string.lower()))
+                sentList.append((tok.contents[1].string.lower(), tok.contents[3].string.lower(), tok.contents[9].string))
             retList.append(sentList)
     return retList
+
+def main():
+    files = get_all_files('xmlDir')
+    toks = get_all_sent_tok(files)
+    print toks
+
+if  __name__ =='__main__':
+    main()
