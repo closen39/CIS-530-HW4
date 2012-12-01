@@ -60,9 +60,9 @@ def get_top_nouns_verbs(tok_sents, tagmap, n):
     fdVerb = FreqDist()
     for sent in tok_sents:
         for tup in sent:
-            if tagmap[tup[2]] == "VERB" and tup[1] not in funcwords:
+            if tagmap[tup[2]] == "VERB" and tup[1] not in funcwords and wn.synsets(tup[1]):
                 fdVerb.inc(tup[1]) 
-            elif tagmap[tup[2]] == "NOUN" and tup[1] not in funcwords:
+            elif tagmap[tup[2]] == "NOUN" and tup[1] not in funcwords and wn.synsets(tup[1]):
                 fdNoun.inc(tup[1])
     return (fdNoun.keys()[:n], fdVerb.keys()[:n])
 
