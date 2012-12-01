@@ -41,7 +41,8 @@ def get_nounverb_lemma_dict(tok_sents, tagmap):
     for sent in tok_sents:
         for tup in sent:
             if tagmap[tup[2]] == "VERB" or tagmap[tup[2]] == "NOUN":
-                retDict[tup[0]] = tup[1]
+                if wn.synsets(tup[1]):
+                    retDict[tup[0]] = tup[1]
     return retDict
 
 def get_func_words(filename):
