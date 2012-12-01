@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Starbucks</word>
+            <lemma>Starbucks</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Corp.</word>
+            <lemma>Corp.</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="4">
+            <word>Board</word>
+            <lemma>Board</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>Meeting</word>
+            <lemma>meet</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="6">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="7">
+            <word>Feb</word>
+            <lemma>Feb</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>09</word>
+            <lemma>09</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="9">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="10">
+            <word>2005</word>
+            <lemma>2005</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="11">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Starbucks</word>
+            <lemma>Starbucks</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Corp.</word>
+            <lemma>Corp.</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="4">
+            <word>Board</word>
+            <lemma>Board</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>Meeting</word>
+            <lemma>meet</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="6">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="7">
+            <word>Feb</word>
+            <lemma>Feb</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>82</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>09</word>
+            <lemma>09</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>85</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="9">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>85</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="10">
+            <word>2005</word>
+            <lemma>2005</lemma>
+            <CharacterOffsetBegin>87</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+        </tokens>
+      </sentence>
+    </sentences>
+  </document>
+</root>

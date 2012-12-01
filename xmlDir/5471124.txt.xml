@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Starbucks</word>
+            <lemma>Starbucks</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Corp.</word>
+            <lemma>Corp.</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="4">
+            <word>Launch</word>
+            <lemma>Launch</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>Energy</word>
+            <lemma>Energy</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>Drink</word>
+            <lemma>drink</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="7">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Starbucks</word>
+            <lemma>Starbucks</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Corp.</word>
+            <lemma>Corp.</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>will</word>
+            <lemma>will</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="4">
+            <word>soon</word>
+            <lemma>soon</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="5">
+            <word>launch</word>
+            <lemma>launch</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="6">
+            <word>its</word>
+            <lemma>its</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="7">
+            <word>Doubleshot</word>
+            <lemma>Doubleshot</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>88</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>Energy</word>
+            <lemma>Energy</lemma>
+            <CharacterOffsetBegin>89</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>+</word>
+            <lemma>+</lemma>
+            <CharacterOffsetBegin>96</CharacterOffsetBegin>
+            <CharacterOffsetEnd>97</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="10">
+            <word>Coffee</word>
+            <lemma>Coffee</lemma>
+            <CharacterOffsetBegin>98</CharacterOffsetBegin>
+            <CharacterOffsetEnd>104</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="11">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>104</CharacterOffsetBegin>
+            <CharacterOffsetEnd>105</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="12">
+            <word>containing</word>
+            <lemma>contain</lemma>
+            <CharacterOffsetBegin>106</CharacterOffsetBegin>
+            <CharacterOffsetEnd>116</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="13">
+            <word>B-vitamins</word>
+            <lemma>b-vitamin</lemma>
+            <CharacterOffsetBegin>117</CharacterOffsetBegin>
+            <CharacterOffsetEnd>127</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="14">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>127</CharacterOffsetBegin>
+            <CharacterOffsetEnd>128</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="15">
+            <word>guarana</word>
+            <lemma>guarana</lemma>
+            <CharacterOffsetBegin>129</CharacterOffsetBegin>
+            <CharacterOffsetEnd>136</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="16">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>137</CharacterOffsetBegin>
+            <CharacterOffsetEnd>140</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="17">
+            <word>ginseng</word>
+            <lemma>ginseng</lemma>
+            <CharacterOffsetBegin>141</CharacterOffsetBegin>
+            <CharacterOffsetEnd>148</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="18">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>148</CharacterOffsetBegin>
+            <CharacterOffsetEnd>149</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="19">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>150</CharacterOffsetBegin>
+            <CharacterOffsetEnd>152</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="20">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>153</CharacterOffsetBegin>
+            <CharacterOffsetEnd>156</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="21">
+            <word>US</word>
+            <lemma>US</lemma>
+            <CharacterOffsetBegin>157</CharacterOffsetBegin>
+            <CharacterOffsetEnd>159</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="22">
+            <word>stores</word>
+            <lemma>store</lemma>
+            <CharacterOffsetBegin>160</CharacterOffsetBegin>
+            <CharacterOffsetEnd>166</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="23">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>166</CharacterOffsetBegin>
+            <CharacterOffsetEnd>167</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="24">
+            <word>as</word>
+            <lemma>as</lemma>
+            <CharacterOffsetBegin>168</CharacterOffsetBegin>
+            <CharacterOffsetEnd>170</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="25">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>171</CharacterOffsetBegin>
+            <CharacterOffsetEnd>173</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="26">
+            <word>add-on</word>
+            <lemma>add-on</lemma>
+            <CharacterOffsetBegin>174</CharacterOffsetBegin>
+            <CharacterOffsetEnd>180</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="27">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>181</CharacterOffsetBegin>
+            <CharacterOffsetEnd>183</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="28">
+            <word>its</word>
+            <lemma>its</lemma>
+            <CharacterOffsetBegin>184</CharacterOffsetBegin>
+            <CharacterOffsetEnd>187</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="29">
+            <word>handmade</word>
+            <lemma>handmade</lemma>
+            <CharacterOffsetBegin>188</CharacterOffsetBegin>
+            <CharacterOffsetEnd>196</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="30">
+            <word>beverages</word>
+            <lemma>beverage</lemma>
+            <CharacterOffsetBegin>197</CharacterOffsetBegin>
+            <CharacterOffsetEnd>206</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="31">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>206</CharacterOffsetBegin>
+            <CharacterOffsetEnd>207</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+      </sentence>
+      <sentence id="3">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>208</CharacterOffsetBegin>
+            <CharacterOffsetEnd>211</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>Energy</word>
+            <lemma>energy</lemma>
+            <CharacterOffsetBegin>212</CharacterOffsetBegin>
+            <CharacterOffsetEnd>218</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>+</word>
+            <lemma>+</lemma>
+            <CharacterOffsetBegin>218</CharacterOffsetBegin>
+            <CharacterOffsetEnd>219</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="4">
+            <word>flavor</word>
+            <lemma>flavor</lemma>
+            <CharacterOffsetBegin>220</CharacterOffsetBegin>
+            <CharacterOffsetEnd>226</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>can</word>
+            <lemma>can</lemma>
+            <CharacterOffsetBegin>227</CharacterOffsetBegin>
+            <CharacterOffsetEnd>230</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="6">
+            <word>be</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>231</CharacterOffsetBegin>
+            <CharacterOffsetEnd>233</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="7">
+            <word>added</word>
+            <lemma>add</lemma>
+            <CharacterOffsetBegin>234</CharacterOffsetBegin>
+            <CharacterOffsetEnd>239</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="8">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>240</CharacterOffsetBegin>
+            <CharacterOffsetEnd>242</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="9">
+            <word>any</word>
+            <lemma>any</lemma>
+            <CharacterOffsetBegin>243</CharacterOffsetBegin>
+            <CharacterOffsetEnd>246</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="10">
+            <word>Starbucks</word>
+            <lemma>Starbucks</lemma>
+            <CharacterOffsetBegin>247</CharacterOffsetBegin>
+            <CharacterOffsetEnd>256</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="11">
+            <word>drink</word>
+            <lemma>drink</lemma>
+            <CharacterOffsetBegin>257</CharacterOffsetBegin>
+            <CharacterOffsetEnd>262</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>262</CharacterOffsetBegin>
+            <CharacterOffsetEnd>263</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+      </sentence>
+      <sentence id="4">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>264</CharacterOffsetBegin>
+            <CharacterOffsetEnd>267</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>company</word>
+            <lemma>company</lemma>
+            <CharacterOffsetBegin>268</CharacterOffsetBegin>
+            <CharacterOffsetEnd>275</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>276</CharacterOffsetBegin>
+            <CharacterOffsetEnd>278</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="4">
+            <word>also</word>
+            <lemma>also</lemma>
+            <CharacterOffsetBegin>279</CharacterOffsetBegin>
+            <CharacterOffsetEnd>283</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="5">
+            <word>planning</word>
+            <lemma>plan</lemma>
+            <CharacterOffsetBegin>284</CharacterOffsetBegin>
+            <CharacterOffsetEnd>292</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="6">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>293</CharacterOffsetBegin>
+            <CharacterOffsetEnd>295</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="7">
+            <word>launch</word>
+            <lemma>launch</lemma>
+            <CharacterOffsetBegin>296</CharacterOffsetBegin>
+            <CharacterOffsetEnd>302</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="8">
+            <word>two</word>
+            <lemma>two</lemma>
+            <CharacterOffsetBegin>303</CharacterOffsetBegin>
+            <CharacterOffsetEnd>306</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="9">
+            <word>other</word>
+            <lemma>other</lemma>
+            <CharacterOffsetBegin>307</CharacterOffsetBegin>
+            <CharacterOffsetEnd>312</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="10">
+            <word>new</word>
+            <lemma>new</lemma>
+            <CharacterOffsetBegin>313</CharacterOffsetBegin>
+            <CharacterOffsetEnd>316</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="11">
+            <word>beverages</word>
+            <lemma>beverage</lemma>
+            <CharacterOffsetBegin>317</CharacterOffsetBegin>
+            <CharacterOffsetEnd>326</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="12">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>327</CharacterOffsetBegin>
+            <CharacterOffsetEnd>329</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="13">
+            <word>give</word>
+            <lemma>give</lemma>
+            <CharacterOffsetBegin>330</CharacterOffsetBegin>
+            <CharacterOffsetEnd>334</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="14">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>335</CharacterOffsetBegin>
+            <CharacterOffsetEnd>336</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="15">
+            <word>boost</word>
+            <lemma>boost</lemma>
+            <CharacterOffsetBegin>337</CharacterOffsetBegin>
+            <CharacterOffsetEnd>342</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="16">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>343</CharacterOffsetBegin>
+            <CharacterOffsetEnd>345</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="17">
+            <word>its</word>
+            <lemma>its</lemma>
+            <CharacterOffsetBegin>346</CharacterOffsetBegin>
+            <CharacterOffsetEnd>349</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="18">
+            <word>falling</word>
+            <lemma>fall</lemma>
+            <CharacterOffsetBegin>350</CharacterOffsetBegin>
+            <CharacterOffsetEnd>357</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="19">
+            <word>profits</word>
+            <lemma>profit</lemma>
+            <CharacterOffsetBegin>358</CharacterOffsetBegin>
+            <CharacterOffsetEnd>365</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="20">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>365</CharacterOffsetBegin>
+            <CharacterOffsetEnd>366</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+      </sentence>
+    </sentences>
+  </document>
+</root>

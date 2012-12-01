@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Starbucks</word>
+            <lemma>Starbucks</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Corp.</word>
+            <lemma>Corp.</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Opens</word>
+            <lemma>open</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="2">
+            <word>New</word>
+            <lemma>New</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>Retail</word>
+            <lemma>Retail</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>Coffeehouse</word>
+            <lemma>Coffeehouse</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>Illinois</word>
+            <lemma>Illinois</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+      </sentence>
+      <sentence id="3">
+        <tokens>
+          <token id="1">
+            <word>Starbucks</word>
+            <lemma>Starbucks</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Coffee</word>
+            <lemma>Coffee</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>Co.</word>
+            <lemma>Co.</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>79</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>has</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>80</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="5">
+            <word>opened</word>
+            <lemma>open</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="6">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>91</CharacterOffsetBegin>
+            <CharacterOffsetEnd>92</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>new</word>
+            <lemma>new</lemma>
+            <CharacterOffsetBegin>93</CharacterOffsetBegin>
+            <CharacterOffsetEnd>96</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="8">
+            <word>retail</word>
+            <lemma>retail</lemma>
+            <CharacterOffsetBegin>97</CharacterOffsetBegin>
+            <CharacterOffsetEnd>103</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="9">
+            <word>coffeehouse</word>
+            <lemma>coffeehouse</lemma>
+            <CharacterOffsetBegin>104</CharacterOffsetBegin>
+            <CharacterOffsetEnd>115</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>116</CharacterOffsetBegin>
+            <CharacterOffsetEnd>118</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>St.</word>
+            <lemma>St.</lemma>
+            <CharacterOffsetBegin>119</CharacterOffsetBegin>
+            <CharacterOffsetEnd>122</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="12">
+            <word>Clair</word>
+            <lemma>Clair</lemma>
+            <CharacterOffsetBegin>123</CharacterOffsetBegin>
+            <CharacterOffsetEnd>128</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="13">
+            <word>Square</word>
+            <lemma>Square</lemma>
+            <CharacterOffsetBegin>129</CharacterOffsetBegin>
+            <CharacterOffsetEnd>135</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="14">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>135</CharacterOffsetBegin>
+            <CharacterOffsetEnd>136</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+      </sentence>
+      <sentence id="4">
+        <tokens>
+          <token id="1">
+            <word>o</word>
+            <lemma>o</lemma>
+            <CharacterOffsetBegin>136</CharacterOffsetBegin>
+            <CharacterOffsetEnd>137</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>134</word>
+            <lemma>134</lemma>
+            <CharacterOffsetBegin>138</CharacterOffsetBegin>
+            <CharacterOffsetEnd>141</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="3">
+            <word>St.</word>
+            <lemma>St.</lemma>
+            <CharacterOffsetBegin>142</CharacterOffsetBegin>
+            <CharacterOffsetEnd>145</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>Clair</word>
+            <lemma>Clair</lemma>
+            <CharacterOffsetBegin>146</CharacterOffsetBegin>
+            <CharacterOffsetEnd>151</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>Square</word>
+            <lemma>Square</lemma>
+            <CharacterOffsetBegin>152</CharacterOffsetBegin>
+            <CharacterOffsetEnd>158</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>Drive</word>
+            <lemma>Drive</lemma>
+            <CharacterOffsetBegin>159</CharacterOffsetBegin>
+            <CharacterOffsetEnd>164</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>164</CharacterOffsetBegin>
+            <CharacterOffsetEnd>165</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="8">
+            <word>Space</word>
+            <lemma>Space</lemma>
+            <CharacterOffsetBegin>166</CharacterOffsetBegin>
+            <CharacterOffsetEnd>171</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>158</word>
+            <lemma>158</lemma>
+            <CharacterOffsetBegin>172</CharacterOffsetBegin>
+            <CharacterOffsetEnd>175</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="10">
+            <word>Fairview</word>
+            <lemma>Fairview</lemma>
+            <CharacterOffsetBegin>176</CharacterOffsetBegin>
+            <CharacterOffsetEnd>184</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="11">
+            <word>Heights</word>
+            <lemma>Heights</lemma>
+            <CharacterOffsetBegin>185</CharacterOffsetBegin>
+            <CharacterOffsetEnd>192</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="12">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>192</CharacterOffsetBegin>
+            <CharacterOffsetEnd>193</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="13">
+            <word>Ill.</word>
+            <lemma>Ill.</lemma>
+            <CharacterOffsetBegin>194</CharacterOffsetBegin>
+            <CharacterOffsetEnd>197</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="14">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>197</CharacterOffsetBegin>
+            <CharacterOffsetEnd>198</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+      </sentence>
+    </sentences>
+  </document>
+</root>

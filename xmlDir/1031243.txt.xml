@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Starbucks</word>
+            <lemma>Starbucks</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Corp.</word>
+            <lemma>Corp.</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>-</word>
+            <lemma>-</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>:</POS>
+          </token>
+          <token id="4">
+            <word>Shareholder\/Analyst</word>
+            <lemma>Shareholder\/Analyst</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>Call</word>
+            <lemma>call</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="6">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>To</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="2">
+            <word>discuss</word>
+            <lemma>discuss</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>company</word>
+            <lemma>company</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="6">
+            <word>store</word>
+            <lemma>store</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>target</word>
+            <lemma>target</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>82</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>increase</word>
+            <lemma>increase</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+      </sentence>
+    </sentences>
+  </document>
+</root>

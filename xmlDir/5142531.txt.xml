@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Starbucks</word>
+            <lemma>Starbucks</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Corp.</word>
+            <lemma>Corp.</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Revised</word>
+            <lemma>revise</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="2">
+            <word>Earnings</word>
+            <lemma>earnings</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>Guidance</word>
+            <lemma>guidance</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="6">
+            <word>Full</word>
+            <lemma>full</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>Year</word>
+            <lemma>year</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>2008</word>
+            <lemma>2008</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="10">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+      </sentence>
+      <sentence id="3">
+        <tokens>
+          <token id="1">
+            <word>Starbucks</word>
+            <lemma>Starbucks</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>79</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Corp.</word>
+            <lemma>Corp.</lemma>
+            <CharacterOffsetBegin>80</CharacterOffsetBegin>
+            <CharacterOffsetEnd>85</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>revised</word>
+            <lemma>revise</lemma>
+            <CharacterOffsetBegin>86</CharacterOffsetBegin>
+            <CharacterOffsetEnd>93</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="4">
+            <word>earnings</word>
+            <lemma>earnings</lemma>
+            <CharacterOffsetBegin>94</CharacterOffsetBegin>
+            <CharacterOffsetEnd>102</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="5">
+            <word>guidance</word>
+            <lemma>guidance</lemma>
+            <CharacterOffsetBegin>103</CharacterOffsetBegin>
+            <CharacterOffsetEnd>111</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>112</CharacterOffsetBegin>
+            <CharacterOffsetEnd>115</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>116</CharacterOffsetBegin>
+            <CharacterOffsetEnd>119</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="8">
+            <word>full</word>
+            <lemma>full</lemma>
+            <CharacterOffsetBegin>120</CharacterOffsetBegin>
+            <CharacterOffsetEnd>124</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="9">
+            <word>year</word>
+            <lemma>year</lemma>
+            <CharacterOffsetBegin>125</CharacterOffsetBegin>
+            <CharacterOffsetEnd>129</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>130</CharacterOffsetBegin>
+            <CharacterOffsetEnd>132</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>2008</word>
+            <lemma>2008</lemma>
+            <CharacterOffsetBegin>133</CharacterOffsetBegin>
+            <CharacterOffsetEnd>137</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>137</CharacterOffsetBegin>
+            <CharacterOffsetEnd>138</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+      </sentence>
+      <sentence id="4">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>139</CharacterOffsetBegin>
+            <CharacterOffsetEnd>142</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>company</word>
+            <lemma>company</lemma>
+            <CharacterOffsetBegin>143</CharacterOffsetBegin>
+            <CharacterOffsetEnd>150</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>said</word>
+            <lemma>say</lemma>
+            <CharacterOffsetBegin>151</CharacterOffsetBegin>
+            <CharacterOffsetEnd>155</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="4">
+            <word>it</word>
+            <lemma>it</lemma>
+            <CharacterOffsetBegin>156</CharacterOffsetBegin>
+            <CharacterOffsetEnd>158</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="5">
+            <word>now</word>
+            <lemma>now</lemma>
+            <CharacterOffsetBegin>159</CharacterOffsetBegin>
+            <CharacterOffsetEnd>162</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="6">
+            <word>expects</word>
+            <lemma>expect</lemma>
+            <CharacterOffsetBegin>163</CharacterOffsetBegin>
+            <CharacterOffsetEnd>170</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="7">
+            <word>earnings</word>
+            <lemma>earnings</lemma>
+            <CharacterOffsetBegin>171</CharacterOffsetBegin>
+            <CharacterOffsetEnd>179</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="8">
+            <word>per</word>
+            <lemma>per</lemma>
+            <CharacterOffsetBegin>180</CharacterOffsetBegin>
+            <CharacterOffsetEnd>183</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>share</word>
+            <lemma>share</lemma>
+            <CharacterOffsetBegin>184</CharacterOffsetBegin>
+            <CharacterOffsetEnd>189</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>190</CharacterOffsetBegin>
+            <CharacterOffsetEnd>192</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>fiscal</word>
+            <lemma>fiscal</lemma>
+            <CharacterOffsetBegin>193</CharacterOffsetBegin>
+            <CharacterOffsetEnd>199</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="12">
+            <word>2008</word>
+            <lemma>2008</lemma>
+            <CharacterOffsetBegin>200</CharacterOffsetBegin>
+            <CharacterOffsetEnd>204</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="13">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>205</CharacterOffsetBegin>
+            <CharacterOffsetEnd>207</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="14">
+            <word>grow</word>
+            <lemma>grow</lemma>
+            <CharacterOffsetBegin>208</CharacterOffsetBegin>
+            <CharacterOffsetEnd>212</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="15">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>213</CharacterOffsetBegin>
+            <CharacterOffsetEnd>215</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="16">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>216</CharacterOffsetBegin>
+            <CharacterOffsetEnd>219</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="17">
+            <word>low</word>
+            <lemma>low</lemma>
+            <CharacterOffsetBegin>220</CharacterOffsetBegin>
+            <CharacterOffsetEnd>223</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="18">
+            <word>double-digits</word>
+            <lemma>double-digit</lemma>
+            <CharacterOffsetBegin>224</CharacterOffsetBegin>
+            <CharacterOffsetEnd>237</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="19">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>238</CharacterOffsetBegin>
+            <CharacterOffsetEnd>240</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="20">
+            <word>percentage</word>
+            <lemma>percentage</lemma>
+            <CharacterOffsetBegin>241</CharacterOffsetBegin>
+            <CharacterOffsetEnd>251</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="21">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>251</CharacterOffsetBegin>
+            <CharacterOffsetEnd>252</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+      </sentence>
+      <sentence id="5">
+        <tokens>
+          <token id="1">
+            <word>Starbucks</word>
+            <lemma>Starbucks</lemma>
+            <CharacterOffsetBegin>253</CharacterOffsetBegin>
+            <CharacterOffsetEnd>262</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>'</word>
+            <lemma>'</lemma>
+            <CharacterOffsetBegin>262</CharacterOffsetBegin>
+            <CharacterOffsetEnd>263</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="3">
+            <word>previous</word>
+            <lemma>previous</lemma>
+            <CharacterOffsetBegin>264</CharacterOffsetBegin>
+            <CharacterOffsetEnd>272</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="4">
+            <word>forecast</word>
+            <lemma>forecast</lemma>
+            <CharacterOffsetBegin>273</CharacterOffsetBegin>
+            <CharacterOffsetEnd>281</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>was</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>282</CharacterOffsetBegin>
+            <CharacterOffsetEnd>285</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="6">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>286</CharacterOffsetBegin>
+            <CharacterOffsetEnd>289</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>earnings</word>
+            <lemma>earnings</lemma>
+            <CharacterOffsetBegin>290</CharacterOffsetBegin>
+            <CharacterOffsetEnd>298</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="8">
+            <word>per</word>
+            <lemma>per</lemma>
+            <CharacterOffsetBegin>299</CharacterOffsetBegin>
+            <CharacterOffsetEnd>302</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>share</word>
+            <lemma>share</lemma>
+            <CharacterOffsetBegin>303</CharacterOffsetBegin>
+            <CharacterOffsetEnd>308</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>309</CharacterOffsetBegin>
+            <CharacterOffsetEnd>311</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>between</word>
+            <lemma>between</lemma>
+            <CharacterOffsetBegin>312</CharacterOffsetBegin>
+            <CharacterOffsetEnd>319</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="12">
+            <word>$</word>
+            <lemma>$</lemma>
+            <CharacterOffsetBegin>320</CharacterOffsetBegin>
+            <CharacterOffsetEnd>321</CharacterOffsetEnd>
+            <POS>$</POS>
+          </token>
+          <token id="13">
+            <word>1.02</word>
+            <lemma>1.02</lemma>
+            <CharacterOffsetBegin>321</CharacterOffsetBegin>
+            <CharacterOffsetEnd>325</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="14">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>326</CharacterOffsetBegin>
+            <CharacterOffsetEnd>329</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="15">
+            <word>$</word>
+            <lemma>$</lemma>
+            <CharacterOffsetBegin>330</CharacterOffsetBegin>
+            <CharacterOffsetEnd>331</CharacterOffsetEnd>
+            <POS>$</POS>
+          </token>
+          <token id="16">
+            <word>1.05</word>
+            <lemma>1.05</lemma>
+            <CharacterOffsetBegin>331</CharacterOffsetBegin>
+            <CharacterOffsetEnd>335</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="17">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>336</CharacterOffsetBegin>
+            <CharacterOffsetEnd>338</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="18">
+            <word>fiscal</word>
+            <lemma>fiscal</lemma>
+            <CharacterOffsetBegin>339</CharacterOffsetBegin>
+            <CharacterOffsetEnd>345</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="19">
+            <word>2008</word>
+            <lemma>2008</lemma>
+            <CharacterOffsetBegin>346</CharacterOffsetBegin>
+            <CharacterOffsetEnd>350</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="20">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>350</CharacterOffsetBegin>
+            <CharacterOffsetEnd>351</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="21">
+            <word>which</word>
+            <lemma>which</lemma>
+            <CharacterOffsetBegin>352</CharacterOffsetBegin>
+            <CharacterOffsetEnd>357</CharacterOffsetEnd>
+            <POS>WDT</POS>
+          </token>
+          <token id="22">
+            <word>would</word>
+            <lemma>would</lemma>
+            <CharacterOffsetBegin>358</CharacterOffsetBegin>
+            <CharacterOffsetEnd>363</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="23">
+            <word>mark</word>
+            <lemma>mark</lemma>
+            <CharacterOffsetBegin>364</CharacterOffsetBegin>
+            <CharacterOffsetEnd>368</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="24">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>369</CharacterOffsetBegin>
+            <CharacterOffsetEnd>370</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="25">
+            <word>17</word>
+            <lemma>17</lemma>
+            <CharacterOffsetBegin>371</CharacterOffsetBegin>
+            <CharacterOffsetEnd>373</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="26">
+            <word>%</word>
+            <lemma>%</lemma>
+            <CharacterOffsetBegin>373</CharacterOffsetBegin>
+            <CharacterOffsetEnd>374</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="27">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>375</CharacterOffsetBegin>
+            <CharacterOffsetEnd>377</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="28">
+            <word>21</word>
+            <lemma>21</lemma>
+            <CharacterOffsetBegin>378</CharacterOffsetBegin>
+            <CharacterOffsetEnd>380</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="29">
+            <word>%</word>
+            <lemma>%</lemma>
+            <CharacterOffsetBegin>380</CharacterOffsetBegin>
+            <CharacterOffsetEnd>381</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="30">
+            <word>increase</word>
+            <lemma>increase</lemma>
+            <CharacterOffsetBegin>382</CharacterOffsetBegin>
+            <CharacterOffsetEnd>390</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="31">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>391</CharacterOffsetBegin>
+            <CharacterOffsetEnd>393</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="32">
+            <word>earnings</word>
+            <lemma>earnings</lemma>
+            <CharacterOffsetBegin>394</CharacterOffsetBegin>
+            <CharacterOffsetEnd>402</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="33">
+            <word>per</word>
+            <lemma>per</lemma>
+            <CharacterOffsetBegin>403</CharacterOffsetBegin>
+            <CharacterOffsetEnd>406</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="34">
+            <word>share</word>
+            <lemma>share</lemma>
+            <CharacterOffsetBegin>407</CharacterOffsetBegin>
+            <CharacterOffsetEnd>412</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="35">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>412</CharacterOffsetBegin>
+            <CharacterOffsetEnd>413</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+      </sentence>
+    </sentences>
+  </document>
+</root>
