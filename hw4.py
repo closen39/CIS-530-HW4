@@ -4,7 +4,10 @@
 from nltk.corpus import PlaintextCorpusReader
 from nltk.tokenize import word_tokenize
 from nltk.probability import FreqDist
+from nltk.corpus import wordnet as wn
 from BeautifulSoup import BeautifulSoup as Soup
+from math import sqrt
+
 
 def get_all_files(directory):
     files = PlaintextCorpusReader(directory, '.*')
@@ -78,6 +81,50 @@ def get_context(lemmas, tok_sents):
                     retDict[lemma].add(x)
     return retDict
 
+def get_path_similarity(word1, context1, word2, context2, pos):
+    wn_pos = wn.VERB
+    if pos == 'noun':
+        wn_pos = wn.NOUN
+    # get synsets
+    synset1 = wn.synsets(word1, wn_pos)
+    synset2 = wn.synsets(word2, wn_pos)
+    # print "word1 is", word1
+    # print "word2 is", word2
+    # print "synset 1 is", synset1
+    # print "synset 2 is", synset2
+    best1 = find_best_synset(synset1, context1)
+    best2 = find_best_synset(synset2, context2)
+    print "best1", best1
+    print "best2", best2
+    return wn.path_similarity(best1, best2)
+
+# finds and returns best Synset object
+def find_best_synset(synsets, context):
+    synset_scores = dict()
+    for synset in synsets:
+        vec = [0] * len(context)
+        context_vec = [1] * len(context)
+        definition = synset.definition.lower()
+        for idx, word in enumerate(context):
+            if word in definition:
+                vec[idx] = 1
+        #generate cosine similarity
+        synset_scores[synset] = cosine_similarity(vec, context_vec)
+    print "synset_scores", synset_scores
+    return max(synset_scores.items(), key=lambda x: x[1])[0]
+
+def cosine_similarity(x, y):
+    prodCross = 0.0
+    xSquare = 0.0
+    ySquare = 0.0
+    for i in range(min(len(x), len(y))):
+        prodCross += x[i] * y[i]
+        xSquare += x[i] * x[i]
+        ySquare += y[i] * y[i]
+    if (xSquare == 0 or ySquare == 0):
+        return 0.0
+    return prodCross / (sqrt(xSquare) * sqrt(ySquare))
+
 def main():
     tagmap = get_tag_mapping('en-ptb-modified.map')
     files = get_all_files('xmlDir')
@@ -85,8 +132,9 @@ def main():
     # nvDict = get_nounverb_lemma_dict(toks, tagmap)
     topnv = get_top_nouns_verbs(toks, tagmap, 2)
     # print topnv
-    contexts = get_context(topnv[0], toks)
-    print contexts
+    contexts = get_context(topnv[1], toks)
+    path_sim = get_path_similarity(topnv[1][0], contexts[topnv[1][0]], topnv[1][1], contexts[topnv[1][1]], "verb")
+    print path_sim
 
 if  __name__ =='__main__':
     main()
