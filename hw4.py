@@ -7,7 +7,7 @@ from nltk.corpus import PlaintextCorpusReader
 from nltk.tokenize import word_tokenize
 from nltk.probability import FreqDist
 from nltk.corpus import wordnet as wn
-# from stanford_parser.parser import Parser
+from stanford_parser.parser import Parser
 
 def get_all_files(directory):
     files = PlaintextCorpusReader(directory, '.*')
@@ -165,7 +165,7 @@ def create_graphviz_file(edge_list, output_file):
     file.write("}")
 
 def main():
-    create_graphviz_file([('dog', 'cat'), ('hello', 'there')], 'test.viz')
+    # create_graphviz_file([('dog', 'cat'), ('hello', 'there')], 'test.viz')
     tagmap = get_tag_mapping('en-ptb-modified.map')
     files = get_all_files('xmlDir')
     toks = get_all_sent_tok(files)
