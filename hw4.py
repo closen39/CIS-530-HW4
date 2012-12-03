@@ -164,17 +164,55 @@ def create_graphviz_file(edge_list, output_file):
         file.write(x + " -- " + y + ";\n")
     file.write("}")
 
-def main():
-    # create_graphviz_file([('dog', 'cat'), ('hello', 'there')], 'test.viz')
+# Question 1.6.2
+def gen_graph_files():
     tagmap = get_tag_mapping('en-ptb-modified.map')
     files = get_all_files('xmlDir')
     toks = get_all_sent_tok(files)
+    lemmaDict = get_nounverb_lemma_dict(toks, tagmap)
+
+    topnv = get_top_nouns_verbs(toks, tagmap, 20)
+    nouns = topnv[0]
+    nContext = get_context(nouns, toks)
+    verbs = topnv[1]
+    vContext = get_context(verbs, toks)
+
+    depList = dependency_parse_files(get_all_files('/home1/c/cis530/hw4/data'))
+
+    edge_list = list()
+    for noun in nouns:
+        top_words = get_top_n_linked_words(noun, nouns, "noun", depList, lemmaDict, nContext, 5)
+        for word in top_words:
+            if noun != word:
+                edge_list.append((noun, word))
+    create_graphviz_file(edge_list, "nouns.viz")
+
+    edge_list = list()
+    for verb in verbs:
+            top_words = get_top_n_linked_words(verb, verbs, "verb", depList, lemmaDict, vContext, 5)
+            for word in top_words:
+                if verb != word:
+                    edge_list.append((verb, word))
+    create_graphviz_file(edge_list, "verbs.viz")
+
+def main():
+    ###########################
+    ##          Main         ##
+    ###########################
+    gen_graph_files()
+
+    ###########################
+    ##        Testing        ##
+    ###########################
+    # tagmap = get_tag_mapping('en-ptb-modified.map')
+    # files = get_all_files('xmlDir')
+    # toks = get_all_sent_tok(files)
     # nvDict = get_nounverb_lemma_dict(toks, tagmap)
-    topnv = get_top_nouns_verbs(toks, tagmap, 2)
+    # topnv = get_top_nouns_verbs(toks, tagmap, 2)
     # print topnv
-    contexts = get_context(topnv[1], toks)
-    path_sim = get_path_similarity(topnv[1][0], contexts[topnv[1][0]], topnv[1][1], contexts[topnv[1][1]], "verb")
-    print path_sim
+    # contexts = get_context(topnv[1], toks)
+    # path_sim = get_path_similarity(topnv[1][0], contexts[topnv[1][0]], topnv[1][1], contexts[topnv[1][1]], "verb")
+    # print path_sim
 
 if  __name__ =='__main__':
     main()
