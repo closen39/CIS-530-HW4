@@ -7,7 +7,7 @@ from nltk.corpus import PlaintextCorpusReader
 from nltk.tokenize import word_tokenize
 from nltk.probability import FreqDist
 from nltk.corpus import wordnet as wn
-from stanford_parser.parser import Parser
+# from stanford_parser.parser import Parser
 
 def get_all_files(directory):
     files = PlaintextCorpusReader(directory, '.*')
@@ -157,8 +157,15 @@ def get_top_n_linked_words(word, word_list, pos, dependency_list, lemma_dict, co
         word_scores[lemma] = get_path_similarity(word, context_dict[word], lemma, context_dict[lemma], pos)
     return sorted(word_scores.keys(), key=lambda x: word_scores[x], reverse=True)[:n]
 
+def create_graphviz_file(edge_list, output_file):
+    file = open(output_file, "w")
+    file.write("graph G {\n")
+    for (x, y) in edge_list:
+        file.write(x + " -- " + y + ";\n")
+    file.write("}")
 
 def main():
+    create_graphviz_file([('dog', 'cat'), ('hello', 'there')], 'test.viz')
     tagmap = get_tag_mapping('en-ptb-modified.map')
     files = get_all_files('xmlDir')
     toks = get_all_sent_tok(files)
