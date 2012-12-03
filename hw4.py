@@ -4,6 +4,7 @@
 from BeautifulSoup import BeautifulSoup as Soup
 from math import sqrt
 from nltk.corpus import PlaintextCorpusReader
+from nltk.tokenize import sent_tokenize
 from nltk.tokenize import word_tokenize
 from nltk.probability import FreqDist
 from nltk.corpus import wordnet as wn
@@ -131,8 +132,9 @@ def dependency_parse_files(fileList):
     p = Parser()
     retList = list()
     for file in fileList:
-        deps = p.parseToStanfordDependencies(open(file).read().rstrip())
-        retList.extend([(r.lower(), gov.text.lower(), dep.text.lower()) for r, gov, dep in deps.dependencies])
+        for sent in sent_tokenize(open(file).read().rstrip()):
+            deps = p.parseToStanfordDependencies(sent)
+            retList.extend([(r.lower(), gov.text.lower(), dep.text.lower()) for r, gov, dep in deps.dependencies])
     return retList
 
 # pos is a pos, lolz
