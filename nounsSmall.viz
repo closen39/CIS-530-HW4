@@ -1,0 +1,26 @@
+graph G {
+company -- stock;
+company -- share;
+share -- company;
+share -- stock;
+share -- repurchase;
+kraft -- sign;
+kraft -- coffee;
+kraft -- may;
+israel -- store;
+authorization -- repurchase;
+authorization -- stock;
+coffee -- kraft;
+coffee -- seattle;
+repurchase -- authorization;
+repurchase -- share;
+repurchase -- may;
+store -- israel;
+seattle -- coffee;
+stock -- company;
+stock -- authorization;
+stock -- share;
+may -- kraft;
+may -- repurchase;
+sign -- kraft;
+}

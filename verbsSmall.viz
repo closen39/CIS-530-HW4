@@ -1,0 +1,22 @@
+graph G {
+say -- close;
+say -- represent;
+authorize -- repurchase;
+authorize -- announce;
+end -- wrap;
+end -- close;
+end -- pull;
+close -- wrap;
+close -- say;
+close -- end;
+repurchase -- authorize;
+announce -- authorize;
+pull -- end;
+represent -- say;
+provide -- quote;
+quote -- provide;
+wrap -- close;
+wrap -- end;
+disclose -- dissolve;
+dissolve -- disclose;
+}
