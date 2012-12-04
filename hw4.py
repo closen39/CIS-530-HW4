@@ -8,7 +8,8 @@ from nltk.tokenize import sent_tokenize
 from nltk.tokenize import word_tokenize
 from nltk.probability import FreqDist
 from nltk.corpus import wordnet as wn
-from stanford_parser.parser import Parser
+from random import choice, seed
+# from stanford_parser.parser import Parser
 
 def get_all_files(directory):
     files = PlaintextCorpusReader(directory, '.*')
@@ -201,12 +202,88 @@ def gen_graph_files():
                     edge_list.append((verb, word))
     create_graphviz_file(edge_list, "verbs.viz")
 
+def calc_gloss_sim(gloss1, gloss2):
+    count = 0
+    visited = set(get_func_words('funcwords.txt'))
+    # calculate length 2
+    gloss1_list = word_tokenize(gloss1)
+    for idx, word in enumerate(gloss1_list):
+        if idx + 1 < len(gloss1_list) and word not in visited and gloss1_list[idx + 1] not in visited:
+            if str(word) + " " + str(gloss1_list[idx + 1]) in gloss2:
+                count += 4
+                visited.add(word)
+                visited.add(gloss1_list[idx + 1])
+    # calculate length 1
+    for word in word_tokenize(gloss1):
+        if word not in visited and word in gloss2:
+            count += 1
+            visited.add(word)
+    return count
+
+
+def get_lesk_similarity(word1, context1, word2, context2, pos):
+    wn_pos = wn.VERB
+    if pos == 'noun':
+        wn_pos = wn.NOUN
+    # get synsets
+    synset1 = wn.synsets(word1, wn_pos)
+    synset2 = wn.synsets(word2, wn_pos)
+
+    best1 = find_best_synset(synset1, context1)
+    best2 = find_best_synset(synset2, context2)
+
+    #get hyponym glosses
+    gloss1 = best1.definition
+    hyp1 = best1.hyponyms()
+    for hyp in hyp1:
+        gloss1 += " " + str(hyp.definition)
+    gloss2 = best2.definition
+    hyp2 = best2.hyponyms()
+    for hyp in hyp2:
+        gloss2 += " " + str(hyp.definition)
+    return calc_gloss_sim(gloss1, gloss2)
+
+def get_random_alternative(word, context, pos):
+    wn_pos = wn.VERB
+    if pos == "noun":
+        wn_pos = wn.NOUN
+
+    synsets = wn.synsets(word)
+    best = find_best_synset(synsets, context)
+    parents = best.hypernyms()
+    children = best.hyponyms()
+    if len(parents) > 0:
+        parent = choice(parents)
+        sibs = parent.hyponyms()
+        sib = choice(sibs)
+        while sib == best:
+            sib = choice(sibs)
+        return sib.name.split('.')[0]
+    elif len(children) > 0:
+        return choice(children).name.split('.')[0]
+    else:
+        return best.name.split('.')[0]
+
+def get_alternative_words(wordlist, tok_sents, pos):
+    context_dict = get_context(wordlist, tok_sents)
+    retList = list()
+    for word in wordlist:
+        alt = get_random_alternative(word, context_dict[word], pos)
+        try:
+            sim = get_lesk_similarity(word, context_dict[word], alt, context_dict[alt], pos)
+        except:
+            # Uses entire document corpus as context if context cannot be found
+            con = [x[0] for y in tok_sents for x in y]
+            sim = get_lesk_similarity(word, context_dict[word], alt, set(con), pos)
+        retList.append((word, alt, sim))
+    return retList
+
 def main():
     ###########################
     ##          Main         ##
     ###########################
-    gen_graph_files()
-
+    #gen_graph_files()
+    
     ###########################
     ##        Testing        ##
     ###########################
@@ -219,6 +296,9 @@ def main():
     # contexts = get_context(topnv[1], toks)
     # path_sim = get_path_similarity(topnv[1][0], contexts[topnv[1][0]], topnv[1][1], contexts[topnv[1][1]], "verb")
     # print path_sim
+    sent1 = "paper that is specially prepared for use in drafting"
+    sent2 = "the art of transferring designs from specially prepared paper to wood or glass or metal surface"
+    print calc_gloss_sim(sent1, sent2)
 
 if  __name__ =='__main__':
     main()
