@@ -9,7 +9,8 @@ from nltk.tokenize import word_tokenize
 from nltk.probability import FreqDist
 from nltk.corpus import wordnet as wn
 from random import choice, seed
-from stanford_parser.parser import Parser
+from string import replace
+#from stanford_parser.parser import Parser
 
 def get_all_files(directory):
     files = PlaintextCorpusReader(directory, '.*')
@@ -66,10 +67,22 @@ def get_top_nouns_verbs(tok_sents, tagmap, n):
                 fdVerb.inc(tup[1]) 
             elif tagmap[tup[2]] == "NOUN" and tup[1] not in funcwords and wn.synsets(tup[1]):
                 fdNoun.inc(tup[1])
-    if n == -1:
-        return (fdNoun.keys(), fdVerb.keys())
-    else:
-        return (fdNoun.keys()[:n], fdVerb.keys()[:n])
+
+    return (fdNoun.keys()[:n], fdVerb.keys()[:n])
+
+# checking if word is in wordnet
+def get_all_nouns_verbs(tok_sents, tagmap):
+    # get_func_words('/home1/c/cis530/hw4/funcwords.txt')
+    funcwords = get_func_words('funcwords.txt')
+    fdNoun = FreqDist()
+    fdVerb = FreqDist()
+    for sent in tok_sents:
+        for tup in sent:
+            if tagmap[tup[2]] == "VERB" and tup[1] not in funcwords and wn.synsets(tup[0]):
+                fdVerb.inc(tup[1]) 
+            elif tagmap[tup[2]] == "NOUN" and tup[1] not in funcwords and wn.synsets(tup[0]):
+                fdNoun.inc(tup[1])
+    return (fdNoun.keys(), fdVerb.keys())
 
 def get_context(lemmas, tok_sents):
     # get_func_words('/home1/c/cis530/hw4/funcwords.txt')
@@ -99,16 +112,18 @@ def get_path_similarity(word1, context1, word2, context2, pos):
     # print "word2 is", word2
     # print "synset 1 is", synset1
     # print "synset 2 is", synset2
-    best1 = find_best_synset(synset1, context1)
-    best2 = find_best_synset(synset2, context2)
+    best1 = find_best_synset(synset1, context1, wn_pos)
+    best2 = find_best_synset(synset2, context2, wn_pos)
     # print "best1", best1
     # print "best2", best2
     return wn.path_similarity(best1, best2)
 
 # finds and returns best Synset object
-def find_best_synset(synsets, context):
+def find_best_synset(synsets, context, pos):
     synset_scores = dict()
     for synset in synsets:
+        if synset.pos != pos:
+            continue
         vec = [0] * len(context)
         context_vec = [1] * len(context)
         definition = synset.definition.lower()
@@ -117,7 +132,7 @@ def find_best_synset(synsets, context):
                 vec[idx] = 1
         #generate cosine similarity
         synset_scores[synset] = cosine_similarity(vec, context_vec)
-    # print "synset_scores", synset_scores
+    #print "synset_scores", synset_scores
     return max(synset_scores.items(), key=lambda x: x[1])[0]
 
 def cosine_similarity(x, y):
@@ -231,9 +246,10 @@ def get_lesk_similarity(word1, context1, word2, context2, pos):
     # get synsets
     synset1 = wn.synsets(word1, wn_pos)
     synset2 = wn.synsets(word2, wn_pos)
-
-    best1 = find_best_synset(synset1, context1)
-    best2 = find_best_synset(synset2, context2)
+    # print "synset1 = ", synset1, "word1 = ", word1, "pos = ", pos
+    # print "synset2 = ", synset2, "word2 = ", word2, "pos = ", pos
+    best1 = find_best_synset(synset1, context1, wn_pos)
+    best2 = find_best_synset(synset2, context2, wn_pos)
 
     #get hyponym glosses
     gloss1 = best1.definition
@@ -252,7 +268,7 @@ def get_random_alternative(word, context, pos):
         wn_pos = wn.NOUN
 
     synsets = wn.synsets(word)
-    best = find_best_synset(synsets, context)
+    best = find_best_synset(synsets, context, wn_pos)
     parents = best.hypernyms()
     children = best.hyponyms()
     if len(parents) > 0:
@@ -307,7 +323,7 @@ def gen_alternative_text(textfile, xmlfile, tagmap):
     text = open(textfile).read()
     out = open(textfile + ".alt", "w")
 
-    nounverbs = get_top_nouns_verbs(tok_sents, tagmap, -1)
+    nounverbs = get_all_nouns_verbs(tok_sents, tagmap)
     nouns = nounverbs[0]
     verbs = nounverbs[1]
 
@@ -326,7 +342,7 @@ def main():
     ###########################
     # gen_graph_files()
     tagmap = get_tag_mapping('en-ptb-modified.map')
-    gen_alternative_text('small_set/1612890.txt', 'smallXmlDir/1612890.txt.xml', tagmap)
+    gen_alternative_text('small_set/88246.txt', 'smallXmlDir/88246.txt.xml', tagmap)
     
     ###########################
     ##        Testing        ##
