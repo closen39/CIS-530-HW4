@@ -66,7 +66,10 @@ def get_top_nouns_verbs(tok_sents, tagmap, n):
                 fdVerb.inc(tup[1]) 
             elif tagmap[tup[2]] == "NOUN" and tup[1] not in funcwords and wn.synsets(tup[1]):
                 fdNoun.inc(tup[1])
-    return (fdNoun.keys()[:n], fdVerb.keys()[:n])
+    if n == -1:
+        return (fdNoun.keys(), fdVerb.keys())
+    else:
+        return (fdNoun.keys()[:n], fdVerb.keys()[:n])
 
 def get_context(lemmas, tok_sents):
     # get_func_words('/home1/c/cis530/hw4/funcwords.txt')
@@ -278,11 +281,33 @@ def get_alternative_words(wordlist, tok_sents, pos):
         retList.append((word, alt, sim))
     return retList
 
+def gen_alternative_text(textfile, xmlfile, tagmap):
+    tok_sents = get_all_sent_tok([xmlfile])
+    nvDict = get_nounverb_lemma_dict(tok_sents, tagmap)
+
+    text = open(textfile).read()
+    out = open(textfile + ".alt", "w")
+
+    nounverbs = get_top_nouns_verbs(tok_sents, tagmap, -1)
+    nouns = nounverbs[0]
+    verbs = nounverbs[1]
+
+    altNouns = get_alternative_words(nouns, tok_sents, "noun")
+    altVerbs = get_alternative_words(verbs, tok_sents, "verb")
+
+    for (word, alt, lesk) in altNouns:
+        text = replace(text, word, alt, 1)
+    for (word, alt, lesk) in altVerbs:
+        text = replace(text, word, alt, 1)
+    out.write(text)
+
 def main():
     ###########################
     ##          Main         ##
     ###########################
-    #gen_graph_files()
+    # gen_graph_files()
+    tagmap = get_tag_mapping('en-ptb-modified.map')
+    gen_alternative_text('small_set/1612890.txt', 'smallXmlDir/1612890.txt.xml', tagmap)
     
     ###########################
     ##        Testing        ##
