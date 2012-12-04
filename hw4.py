@@ -97,8 +97,8 @@ def get_path_similarity(word1, context1, word2, context2, pos):
     # print "synset 2 is", synset2
     best1 = find_best_synset(synset1, context1)
     best2 = find_best_synset(synset2, context2)
-    print "best1", best1
-    print "best2", best2
+    # print "best1", best1
+    # print "best2", best2
     return wn.path_similarity(best1, best2)
 
 # finds and returns best Synset object
@@ -113,7 +113,7 @@ def find_best_synset(synsets, context):
                 vec[idx] = 1
         #generate cosine similarity
         synset_scores[synset] = cosine_similarity(vec, context_vec)
-    print "synset_scores", synset_scores
+    # print "synset_scores", synset_scores
     return max(synset_scores.items(), key=lambda x: x[1])[0]
 
 def cosine_similarity(x, y):
