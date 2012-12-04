@@ -134,7 +134,7 @@ def dependency_parse_files(fileList):
     for file in fileList:
         for sent in sent_tokenize(open(file).read().rstrip()):
             deps = p.parseToStanfordDependencies(sent)
-            retList.extend([(r.lower(), gov.text.lower(), dep.text.lower()) for r, gov, dep in deps.dependencies])
+            retList.extend([(r.lower(), gov.text.lower(), dep.text.lower()) for r, gov, dep in deps.dependencies if wn.synsets(gov) and wn.synsets(dep)])
     return retList
 
 # pos is a pos, lolz
