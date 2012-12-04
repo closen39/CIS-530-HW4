@@ -321,9 +321,9 @@ def main():
     # contexts = get_context(topnv[1], toks)
     # path_sim = get_path_similarity(topnv[1][0], contexts[topnv[1][0]], topnv[1][1], contexts[topnv[1][1]], "verb")
     # print path_sim
-    sent1 = "paper that is specially prepared for use in drafting"
-    sent2 = "the art of transferring designs from specially prepared paper to wood or glass or metal surface"
-    print calc_gloss_sim(sent1, sent2)
+    # sent1 = "paper that is specially prepared for use in drafting"
+    # sent2 = "the art of transferring designs from specially prepared paper to wood or glass or metal surface"
+    # print calc_gloss_sim(sent1, sent2)
 
 if  __name__ =='__main__':
     main()
