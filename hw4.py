@@ -10,7 +10,7 @@ from nltk.probability import FreqDist
 from nltk.corpus import wordnet as wn
 from random import choice, seed
 from string import replace
-#from stanford_parser.parser import Parser
+from stanford_parser.parser import Parser
 
 def get_all_files(directory):
     files = PlaintextCorpusReader(directory, '.*')
