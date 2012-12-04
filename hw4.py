@@ -236,11 +236,11 @@ def get_lesk_similarity(word1, context1, word2, context2, pos):
     gloss1 = best1.definition
     hyp1 = best1.hyponyms()
     for hyp in hyp1:
-        gloss1 += " " + hyp.definition
+        gloss1 += " " + str(hyp.definition)
     gloss2 = best2.definition
     hyp2 = best2.hyponyms()
     for hyp in hyp2:
-        gloss2 += " " + hyp.definition
+        gloss2 += " " + str(hyp.definition)
     return calc_gloss_sim(gloss1, gloss2)
 
 def get_random_alternative(word, context, pos):
