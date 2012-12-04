@@ -134,14 +134,14 @@ def dependency_parse_files(fileList):
     for file in fileList:
         for sent in sent_tokenize(open(file).read().rstrip()):
             deps = p.parseToStanfordDependencies(sent)
-            retList.extend([(r.lower(), gov.text.lower(), dep.text.lower()) for r, gov, dep in deps.dependencies if wn.synsets(gov) and wn.synsets(dep)])
+            retList.extend([(r.lower(), gov.text.lower(), dep.text.lower()) for r, gov, dep in deps.dependencies if wn.synsets(gov.text) and wn.synsets(dep.text)])
     return retList
 
 # pos is a pos, lolz
 # word_list is list of lemmas to be considered
 # word is a lemma
 def get_linked_words(word, word_list, pos, dependency_list, lemma_dict):
-    dep_list = [(r, lemma_dict[gov], lemma_dict[dep]) for r, gov, dep in dependency_list if lemma_dict[gov] != None and lemma_dict[dep] != None]
+    dep_list = [(r, lemma_dict[gov], lemma_dict[dep]) for r, gov, dep in dependency_list if gov in lemma_dict and dep in lemma_dict]
     retList = list()
     for lemma in word_list:
         dep1 = [(r, gov, dep) for r, gov, dep in dep_list if gov == lemma and dep == word]
