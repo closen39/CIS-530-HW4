@@ -179,19 +179,25 @@ def gen_graph_files():
     verbs = topnv[1]
     vContext = get_context(verbs, toks)
 
+    print "Starting Dependency List Generation"
     depList = dependency_parse_files(get_all_files('/home1/c/cis530/hw4/data'))
+    print "Finished generating Dependency List"
 
+    print "Processing Nouns"
     edge_list = list()
     for noun in nouns:
         top_words = get_top_n_linked_words(noun, nouns, "noun", depList, lemmaDict, nContext, 5)
+        print "Top nouns found"
         for word in top_words:
             if noun != word:
                 edge_list.append((noun, word))
     create_graphviz_file(edge_list, "nouns.viz")
 
+    print "Processing verbs"
     edge_list = list()
     for verb in verbs:
             top_words = get_top_n_linked_words(verb, verbs, "verb", depList, lemmaDict, vContext, 5)
+            print "Top verbs found"
             for word in top_words:
                 if verb != word:
                     edge_list.append((verb, word))
