@@ -8,7 +8,8 @@ from nltk.tokenize import sent_tokenize
 from nltk.tokenize import word_tokenize
 from nltk.probability import FreqDist
 from nltk.corpus import wordnet as wn
-#from stanford_parser.parser import Parser
+from random import choice, seed
+from stanford_parser.parser import Parser
 
 def get_all_files(directory):
     files = PlaintextCorpusReader(directory, '.*')
@@ -241,6 +242,27 @@ def get_lesk_similarity(word1, context1, word2, context2, pos):
     for hyp in hyp2:
         gloss2 += " " + hyp.definition
     return calc_gloss_sim(gloss1, gloss2)
+
+def get_random_alternative(word, context, pos):
+    wn_pos = wn.VERB
+    if pos == "noun":
+        wn_pos = wn.NOUN
+
+    synsets = wn.synsets(word)
+    best = find_best_synset(synsets, context)
+    parents = best.hypernyms()
+    children = best.hyponyms()
+    if len(parents) > 0:
+        parent = choice(parents)
+        sibs = parent.hyponyms()
+        sib = choice(sibs)
+        while sib == best:
+            sib = choice(sibs)
+        return sib.text
+    elif len(children) > 0:
+        return choice(children).text
+    else:
+        return best.text
 
 
 def main():
