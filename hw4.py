@@ -259,8 +259,9 @@ def get_random_alternative(word, context, pos):
         parent = choice(parents)
         sibs = parent.hyponyms()
         sib = choice(sibs)
-        while sib == best:
-            sib = choice(sibs)
+        if (len(sibs) > 1):
+            while sib == best:
+                sib = choice(sibs)
         return sib.name.split('.')[0]
     elif len(children) > 0:
         return choice(children).name.split('.')[0]
