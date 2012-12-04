@@ -187,7 +187,6 @@ def gen_graph_files():
     edge_list = list()
     for noun in nouns:
         top_words = get_top_n_linked_words(noun, nouns, "noun", depList, lemmaDict, nContext, 5)
-        print "Top nouns found"
         for word in top_words:
             if noun != word:
                 edge_list.append((noun, word))
@@ -197,7 +196,6 @@ def gen_graph_files():
     edge_list = list()
     for verb in verbs:
             top_words = get_top_n_linked_words(verb, verbs, "verb", depList, lemmaDict, vContext, 5)
-            print "Top verbs found"
             for word in top_words:
                 if verb != word:
                     edge_list.append((verb, word))
