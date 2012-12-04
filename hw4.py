@@ -201,6 +201,32 @@ def gen_graph_files():
                     edge_list.append((verb, word))
     create_graphviz_file(edge_list, "verbs.viz")
 
+def calc_gloss_sim(gloss1, gloss2):
+    pass
+
+def get_lesk_similarity(word1, context1, word2, context2, pos):
+    wn_pos = wn.VERB
+    if pos == 'noun':
+        wn_pos = wn.NOUN
+    # get synsets
+    synset1 = wn.synsets(word1, wn_pos)
+    synset2 = wn.synsets(word2, wn_pos)
+
+    best1 = find_best_synset(synset1, context1)
+    best2 = find_best_synset(synset2, context2)
+
+    #get hyponym glosses
+    gloss1 = best1.definition
+    hyp1 = best1.hyponyms()
+    for hyp in hyp1:
+        gloss1 += " " + hyp.definition
+    gloss2 = best2.definition
+    hyp2 = best2.hyponyms()
+    for hyp in hyp2:
+        gloss2 += " " + hyp.definition
+    return calc_gloss_sim(gloss1, gloss2)
+
+
 def main():
     ###########################
     ##          Main         ##
