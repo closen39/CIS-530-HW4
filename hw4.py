@@ -8,7 +8,7 @@ from nltk.tokenize import sent_tokenize
 from nltk.tokenize import word_tokenize
 from nltk.probability import FreqDist
 from nltk.corpus import wordnet as wn
-from stanford_parser.parser import Parser
+#from stanford_parser.parser import Parser
 
 def get_all_files(directory):
     files = PlaintextCorpusReader(directory, '.*')
@@ -169,7 +169,7 @@ def create_graphviz_file(edge_list, output_file):
 # Question 1.6.2
 def gen_graph_files():
     tagmap = get_tag_mapping('en-ptb-modified.map')
-    files = get_all_files('xmlDir')
+    files = get_all_files('smallXmlDir')
     toks = get_all_sent_tok(files)
     lemmaDict = get_nounverb_lemma_dict(toks, tagmap)
 
@@ -180,7 +180,7 @@ def gen_graph_files():
     vContext = get_context(verbs, toks)
 
     print "Starting Dependency List Generation"
-    depList = dependency_parse_files(get_all_files('/home1/c/cis530/hw4/data'))
+    depList = dependency_parse_files(get_all_files('/home1/c/cis530/hw4/small_set'))
     print "Finished generating Dependency List"
 
     print "Processing Nouns"
@@ -202,7 +202,24 @@ def gen_graph_files():
     create_graphviz_file(edge_list, "verbs.viz")
 
 def calc_gloss_sim(gloss1, gloss2):
-    pass
+    count = 0
+    visited = set(get_func_words('funcwords.txt'))
+    # calculate length 2
+    for idx, word in enumerate(word_tokenize(gloss1)):
+        if idx + 1 < len(gloss1) and word not in visited and gloss1[idx + 1] not in visited:
+            if str(word) + " " + str(gloss1[idx + 1]) in gloss2:
+                count += 4
+                visited.add(word)
+                visited.add(gloss1[idx + 1])
+                print word, gloss1[idx+1]
+    # calculate length 1
+    for word in word_tokenize(gloss1):
+        if word not in visited and word in gloss2:
+            count += 1
+            visited.add(word)
+            print word
+    return count
+
 
 def get_lesk_similarity(word1, context1, word2, context2, pos):
     wn_pos = wn.VERB
@@ -231,8 +248,8 @@ def main():
     ###########################
     ##          Main         ##
     ###########################
-    gen_graph_files()
-
+    #gen_graph_files()
+    
     ###########################
     ##        Testing        ##
     ###########################
@@ -245,6 +262,9 @@ def main():
     # contexts = get_context(topnv[1], toks)
     # path_sim = get_path_similarity(topnv[1][0], contexts[topnv[1][0]], topnv[1][1], contexts[topnv[1][1]], "verb")
     # print path_sim
+    sent1 = "paper that is specially prepared for use in drafting"
+    sent2 = "the art of transferring designs from specially prepared paper to wood or glass or metal surface"
+    print calc_gloss_sim(sent1, sent2)
 
 if  __name__ =='__main__':
     main()
