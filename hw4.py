@@ -205,19 +205,18 @@ def calc_gloss_sim(gloss1, gloss2):
     count = 0
     visited = set(get_func_words('funcwords.txt'))
     # calculate length 2
-    for idx, word in enumerate(word_tokenize(gloss1)):
-        if idx + 1 < len(gloss1) and word not in visited and gloss1[idx + 1] not in visited:
-            if str(word) + " " + str(gloss1[idx + 1]) in gloss2:
+    gloss1_list = word_tokenize(gloss1)
+    for idx, word in enumerate(gloss1_list):
+        if idx + 1 < len(gloss1_list) and word not in visited and gloss1_list[idx + 1] not in visited:
+            if str(word) + " " + str(gloss1_list[idx + 1]) in gloss2:
                 count += 4
                 visited.add(word)
-                visited.add(gloss1[idx + 1])
-                print word, gloss1[idx+1]
+                visited.add(gloss1_list[idx + 1])
     # calculate length 1
     for word in word_tokenize(gloss1):
         if word not in visited and word in gloss2:
             count += 1
             visited.add(word)
-            print word
     return count
 
 
