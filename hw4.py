@@ -258,11 +258,11 @@ def get_random_alternative(word, context, pos):
         sib = choice(sibs)
         while sib == best:
             sib = choice(sibs)
-        return sib.text
+        return sib.name.split('.')[0]
     elif len(children) > 0:
-        return choice(children).text
+        return choice(children).name.split('.')[0]
     else:
-        return best.text
+        return best.name.split('.')[0]
 
 
 def main():
