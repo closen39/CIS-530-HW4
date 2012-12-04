@@ -282,6 +282,24 @@ def get_alternative_words(wordlist, tok_sents, pos):
         retList.append((word, alt, sim))
     return retList
 
+"""
+Question 2.2.3
+--------------------------------------------------------------------------------------------------
+The alternative text seems to make sense, although some substitutions are clearly not perfect.
+Some replacements make sense for the word alone, but don't fit well with the context of the document.
+Some others don't convey the correct meaning (for example, replacing "addition" with "division" - although
+they are clearly related words, the replacement doesn't make sense or mean the same thing)
+
+Other word replacements seem totally farfetched, and do not fit the context or word very well.
+One such example is "grocery stores" being replaced with "open-air-market sperm-banks". Nuff said.
+
+We rank our replacement at a 2 out of 5. As stated, while some words do make sense or can reasonably
+be called synonyms for the original words, others are extremely out of place, or do not match the intended
+meaning of the passage at all.
+
+According to our results, it looks like the similarity has little bearing on the actual
+appropriateness and "fit" of the replacement word in a real corpus of text.
+"""
 def gen_alternative_text(textfile, xmlfile, tagmap):
     tok_sents = get_all_sent_tok([xmlfile])
     nvDict = get_nounverb_lemma_dict(tok_sents, tagmap)
