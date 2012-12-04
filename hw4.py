@@ -169,7 +169,7 @@ def create_graphviz_file(edge_list, output_file):
 # Question 1.6.2
 def gen_graph_files():
     tagmap = get_tag_mapping('en-ptb-modified.map')
-    files = get_all_files('smallXmlDir')
+    files = get_all_files('xmlDir')
     toks = get_all_sent_tok(files)
     lemmaDict = get_nounverb_lemma_dict(toks, tagmap)
 
@@ -180,7 +180,7 @@ def gen_graph_files():
     vContext = get_context(verbs, toks)
 
     print "Starting Dependency List Generation"
-    depList = dependency_parse_files(get_all_files('/home1/c/cis530/hw4/small_set'))
+    depList = dependency_parse_files(get_all_files('/home1/c/cis530/hw4/data'))
     print "Finished generating Dependency List"
 
     print "Processing Nouns"
