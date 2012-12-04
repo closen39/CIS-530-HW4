@@ -276,9 +276,9 @@ def get_alternative_words(wordlist, tok_sents, pos):
         try:
             sim = get_lesk_similarity(word, context_dict[word], alt, context_dict[alt], pos)
         except:
-            # Uses entire document corpus as context if context cannot be found
+            # Uses context of original word if alt word context not found
             con = [x[0] for y in tok_sents for x in y]
-            sim = get_lesk_similarity(word, context_dict[word], alt, set(con), pos)
+            sim = get_lesk_similarity(word, context_dict[word], alt, context_dict[word], pos)
         retList.append((word, alt, sim))
     return retList
 
